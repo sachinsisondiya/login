@@ -4,27 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
     <form class="login-form" id="form">
-      <h1>Login page for Firebase</h1>
+      <h1>Sign In</h1>
+      <div class="container">
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder=" email" id="user-email" />
+        </div>
 
-      <div class="container">
-        <label for="user-email">Email:</label>
-        <input type="email" placeholder="Enter your email" id="user-email" />
-      </div>
-      <div class="container">
         <label for="user-pass">Password</label>
         <input
           type="password"
           placeholder="Enter your password"
           id="user-pass"
         />
-      </div>
 
-      <button type="submit" id="login">Login</button>
+        <a href="#" class="forget-password" aria-label="recovery password"
+          >Recovery Password</a
+        >
+
+        <button id="sign-in">Sign In</button>
+
+        <p class="seprator">........or.........</p>
+
+        <div class="using-account">
+          <button id="google-sing-in">
+            <i class="fa-brands fa-google"></i>
+          </button>
+          <button id="sign-in-facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </button>
+        </div>
+        <a href="#" id="open-new-account">Dont't have account yet?</a>
+        <a href="#" id="sign-up">Sign Up</a>
+      </div>
     </form>
+
     <script src="/firebase.js" type="module"></script>
   </body>
 </html>
