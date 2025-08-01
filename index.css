@@ -2,51 +2,63 @@
   margin: 0;
   padding: 0;
 }
-.login-form{
-  margin: 0 auto;
-  width: 500px;;
-  height: 500px;
-  border: 1px solid black;
+body{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
+}
+.form{
+  margin: 0 auto;
+  width: 500px;;
+  height: 800px;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
 }
 h1{
   margin:20px 0px;
 
 }
-.container{
-  border: 1px solid black;
- 
-  width: 250px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
 
+.input-box{
+  height: 50px;
+  display: flex;
+  margin: 0 auto 0 auto ;
+  border-bottom: 1px solid grey;
 }
-.input{
-  height: 30px;
-  display: inline-block;
-  justify-content: center;
-border: 1px solid black;
+.input-box label{
+   font-size: 18px;
+  font-weight: bold;
+ 
 }
 .input i{
   margin: 0px;
+  display: absolute;
+  top: 50px;
+}
+/* .second label{
+  font-size: 18px;
+  font-weight: bold;
+
+} */
+.fa-envelope{
+  color: grey;
 }
 label{
   align-self: auto;
 }
 input{
-  padding: 10px 10px;
+  padding: 2px 5px;
   margin: 0px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+.fa-lock{
+  color: grey;
 }
 
-button{
-  margin: 0px;
-  padding: 5px 10px;
-}
+
 .forget-password{
 
   
@@ -55,7 +67,7 @@ button{
 .using-account{
   display: flex;
   justify-content: space-around;
-  border: 1px solid black;
+
   
 
 }
@@ -65,13 +77,37 @@ button{
   margin: 0px auto 0px auto;
   padding: 5px;
 }
-button{
-  border: none;
+
+.sign-in{
+  margin: 0px auto 0px auto;
+  width: 200px;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 i{
+  font-size: 50px;
+  margin: 2px;
+  
+}
+.options{
+  text-align: center;
+}
+.options a{
+  margin-right: 20px;
+}
+.fa-user{
+  color: grey;
   font-size: 40px;
-  padding: auto;
+}
+.sign-up{
+  margin: 5px;
+  padding: 5px 40px;
 }
 
+.message{
+  font-size: 1.5rem;
+  color: red;
+}
 
