@@ -33,7 +33,7 @@
 
   signUp.addEventListener('click',function(e){
       e.preventDefault();
-       
+
       const firstName = document.getElementById('first-name').value
       const lastName = document.getElementById('last-name').value 
       const email = document.getElementById('sign-up-user-email').value
@@ -64,10 +64,10 @@
       .catch((error)=>{
          const errorCode = error.code
          if(errorCode === 'auth/email-already-in-use'){
-           ShowMessage('email already exists', 'signUpMessage')
+           ShowMessage('email already exists', 'sign-up-message')
       }
       else{
-        ShowMessage('unable to create User', 'signUpMessage')
+        ShowMessage('unable to create User', 'sign-up-message')
       }
     })
 
@@ -99,4 +99,4 @@
 
   })
 
-  
+  export default app;

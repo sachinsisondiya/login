@@ -21,20 +21,23 @@
           <div class="input-box">
             <i class="fa-solid fa-user"></i>
             <label for="first-name">First Name</label>
-            <input type="text" placeholder="First Name" id="first-name" />
+            <input type="text" placeholder="First Name" id="first-name" name="first-name"
+             required/>
           </div>
 
           <div class="input-box">
             <i class="fa-solid fa-user"></i>
             <label for="last-name">Last Name</label>
-            <input type="text" placeholder="Last Name" id="last-name" />
+            <input type="text" placeholder="Last Name" id="last-name" name="last-name" 
+             required/>
           </div>
 
           <div class="">
             <div class="input-box">
               <i class="fa-solid fa-envelope"></i>
               <label for="sign-up-user-email">email</label>
-              <input type="email" placeholder=" email" id="sign-up-user-email" />
+              <input type="email" placeholder=" email" id="sign-up-user-email" name="email"
+              required />
             </div>
 
             <div class="input-box second">
@@ -44,9 +47,11 @@
                 type="password"
                 placeholder="Enter your password"
                 id="sign-up-user-pass"
+                required
+                name="password"
               />
             </div>
-            <button class="sign-up" id="sign-up">Sign Up</button>
+            <button class="sign-up" id="sign-up" type="submit">Sign Up</button>
 
             <p class="seprator">........or.........</p>
 
@@ -75,7 +80,7 @@
           <div class="input-box">
             <i class="fa-solid fa-envelope"></i>
             <label for="user-email">email</label>
-            <input type="email" placeholder=" email" id="user-email" />
+            <input type="email" placeholder=" email" id="user-email" name="email-sign-in" required/>
           </div>
 
           <div class="input-box second">
@@ -85,6 +90,8 @@
               type="password"
               placeholder="Enter your password"
               id="user-pass"
+              required
+              name="password-sign-in"
             />
           </div>
 
